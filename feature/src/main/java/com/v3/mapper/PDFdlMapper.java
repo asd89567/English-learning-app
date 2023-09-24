@@ -8,5 +8,5 @@ import com.bocky.pojo.User;
  * 　@Date: 2023-05-11-下午 08:13
  * 　@Description:
  */
-public interface PDFMapper  extends BaseMapper<User> {
+public interface PDFdlMapper extends BaseMapper<User> {
 }

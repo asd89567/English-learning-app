@@ -1,12 +1,13 @@
 package com.v3.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.bocky.pojo.User;
+import com.bocky.pojo.file;
+
 
 /**
  * 　@Author: Bocky
- * 　@Date: 2023-05-11-下午 05:01
+ * 　@Date: 2023-09-22-下午 05:40
  * 　@Description:
  */
-public interface UserMapper extends BaseMapper<User> {
+public interface FileMapper extends BaseMapper<file> {
 }

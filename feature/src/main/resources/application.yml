@@ -1,9 +1,11 @@
+server:
+  port: 3000
 spring:
   # 连接池配置
   datasource:
-    url: jdbc:mysql://192.168.1.178:3306/store_carousel?useSSL=false
+    url: jdbc:mysql://localhost:3306/v3project?useSSL=false
     username: root
-    password: root
+    password: b0517
     driver-class-name: com.mysql.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
   profiles:
@@ -16,13 +18,9 @@ mybatis-plus:
     lazy-loading-enabled: true
     aggressive-lazy-loading: false
   type-aliases-package: com.bocky.pojo #设置别名
-ribbon:
-  eager-load:
-    enabled: true #开启饥饿加载提升第一次访问速度
-    clients:
-      - carousel-service #指定开启服务
-feign:
-  httpclient:
-    enabled: true  # 开启httpClient开关,启动连接池,提升feign连接效率!
-    max-connections: 200  #最大连接数量
-    max-connections-per-route: 50  #单路径最大连接数
+
+openai:
+  proxyHost: 127.0.0.1
+  proxyPort: 7890
+  apiKey:
+      - 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
